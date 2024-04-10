@@ -1,0 +1,55 @@
+<div mat-dialog-title>
+    <h1 class="center">Add User</h1>
+</div>
+<form [formGroup]="userForm" (ngSubmit)="ajouterUser()">
+<div mat-dialog-content class="content">
+    <div class="container">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input matInput formControlName="nom" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Prenom</mat-label>
+                <input matInput formControlName="prenom" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Adresse</mat-label>
+                <input matInput formControlName="addresse" type="text" placeholder="adresse">
+            </mat-form-field>
+        </div>
+        
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" placeholder="">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Telephone</mat-label>
+                <input matInput formControlName="telephone" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+       
+
+
+
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+    <button mat-raised-button>Cancel</button>
+</div>
+</form>

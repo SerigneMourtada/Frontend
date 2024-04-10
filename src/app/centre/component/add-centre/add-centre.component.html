@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+    <h1 class="center">Ajouter Centre</h1>
+</div>
+<form [formGroup]="centreForm" (ngSubmit)="ajouterCentre()">
+<div mat-dialog-content class="content">
+    <div class="container">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input matInput formControlName="nom" type="text" placeholder="nomCentre">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Adresse</mat-label>
+                <input matInput formControlName="addresse" type="text" placeholder="adresse">
+            </mat-form-field>
+        </div>
+        
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Heure Ouverture</mat-label>
+                <input matInput formControlName="heure_Ouverture" type="text" placeholder="HH:mm">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Heure De Fermeture</mat-label>
+                <input matInput formControlName="heure_De_Fermeture" type="text" placeholder="HH:mm">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" placeholder="email">
+            </mat-form-field>
+        </div>
+       
+
+
+
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+    <button mat-raised-button>Cancel</button>
+</div>
+</form>

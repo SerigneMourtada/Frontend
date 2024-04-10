@@ -1,0 +1,35 @@
+<div mat-dialog-title>
+    <h1 class="center">Add Vaccin</h1>
+</div>
+<form [formGroup]="vaccinForm" (ngSubmit)="ajouterVaccin()">
+<div mat-dialog-content class="content">
+    <div class="container">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input matInput formControlName="nomVaccin" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Numero De Lot</mat-label>
+                <input matInput formControlName="numeroDeLot" type="number" placeholder="">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Effet Secondaire</mat-label>
+                <input matInput formControlName="effetSecondaires" type="text" placeholder="">
+            </mat-form-field>
+        </div>
+        
+       
+       </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+    <button mat-raised-button>Cancel</button>
+</div>
+</form>
+
